@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#101218">
+<title>Datenschutz · Wolfsnacht</title>
+<style>
+:root{--bg:#101218;--card:#1a1d26;--line:#2c3140;--fg:#eceef3;--mut:#9aa1b2;--acc:#e0a24e;color-scheme:dark}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+body{padding:max(16px,env(safe-area-inset-top)) 16px max(28px,env(safe-area-inset-bottom))}
+main{max-width:640px;margin:0 auto}
+a{color:var(--acc)}
+.back{display:inline-block;margin:6px 0 14px;text-decoration:none;font-weight:600}
+h1{margin:0 0 6px;font-size:1.8rem}
+h2{margin:26px 0 6px;font-size:1.15rem}
+p,li{color:#d6dae3}
+.mut{color:var(--mut);font-size:.95rem}
+.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+</style>
+</head>
+<body>
+<main>
+<a class="back" href="./" onclick="if(history.length>1){history.back();return false;}">← Zurück</a>
+<h1>Datenschutz</h1>
+<p class="mut">Wolfsnacht – Werwolf + Erzähler. Stand: 24. Oktober 2026.</p>
+
+<div class="box">
+<p><b>Kurz gesagt:</b> Keine Konten, keine Werbung, kein Tracking, keine Analyse. Was ihr für ein Spiel eingebt,
+liegt nur in eurer Lobby und ist spätestens 24 Stunden nach der letzten Nutzung gelöscht.</p>
+</div>
+
+<h2>Was gespeichert wird</h2>
+<p>Wer ein Spiel erstellt, bekommt auf unserem Server eine Lobby mit einem Code aus vier Buchstaben. Darin liegen
+die Namen, die ihr eingebt, freiwillige PINs der Spieler, die verteilten Rollen und der Spielverlauf. Wird eine
+Lobby 24 Stunden lang nicht benutzt, wird sie mit allen Daten gelöscht.</p>
+
+<h2>Namen vorlesen</h2>
+<p>Erzählt die App, liest sie Spielernamen vor. Dafür setzt eine Sprachsoftware (Piper) auf unserem Server den
+Namen in Sprache um. Die Namen gehen dabei an keinen anderen Dienst und werden nur kurz im Arbeitsspeicher
+gehalten.</p>
+
+<h2>Auf deinem Gerät</h2>
+<p>Die App merkt sich auf deinem Gerät die Codes deiner Lobbys, deinen Namen im Spiel und Einstellungen wie den
+dunklen Modus. Das bleibt auf dem Gerät; Daten einer Lobby löscht die App zwei Tage nach der letzten Nutzung.</p>
+
+<h2>Verbindung</h2>
+<p>Die Verbindung ist verschlüsselt. Unser Server ist über den Dienst Tailscale (Tailscale Inc., Kanada)
+erreichbar, der die verschlüsselte Verbindung nur weiterleitet und ihren Inhalt nicht lesen kann; dabei sieht
+er wie jeder Netzbetreiber die IP-Adresse. Unser Server nutzt die IP-Adresse kurz im Arbeitsspeicher, um zu
+viele neue Lobbys von einer Stelle zu bremsen. Es gibt keine Zugriffsprotokolle.</p>
+
+<h2>Fernseher</h2>
+<p>Mit AirPlay schickt dein iPhone das Bild direkt an den Fernseher, ohne Umweg. Mit Chromecast sucht die App
+(nur wenn du „Auf Fernseher zeigen“ öffnest) im WLAN nach Geräten; dazu fragt das iPhone einmal nach dem lokalen
+Netzwerk. Verbindest du einen Chromecast, lädt er die Empfänger-Software von Google (Google Ireland Ltd.) und
+unsere Fernseher-Seite; dabei sieht Google wie bei jedem Chromecast die IP-Adresse des Geräts. Namen und Spiel
+gehen nur zwischen Chromecast und unserem Server. Die Chromecast-Bibliothek von Google in der App sendet Diagnosedaten
+an Google (Leistungs- und Fehlerdaten, eine Gerätekennung und den ungefähren Standort, wie er sich aus der
+IP-Adresse ergibt), damit Google Chromecast verbessern kann; mit dem Spiel oder deinem Namen hat das nichts zu tun.</p>
+
+<p>Die Fire-TV-App zeigt nur unsere Fernseher-Seite. Damit dein iPhone sie findet, meldet sie sich im WLAN mit
+der sechsstelligen Nummer, die auch auf dem Bildschirm steht; die Nummer gilt nur für diese eine Verbindung. Die
+Fire-TV-App enthält keine Bibliotheken von Google oder anderen Anbietern und sammelt selbst nichts; was Amazon als
+Hersteller des Fire TV über sein Gerät erfasst, richtet sich nach Amazons eigenen Bedingungen.</p>
+
+<h2>Was die App nicht tut</h2>
+<p>Sie fragt nicht nach Standort, Kamera, Mikrofon, Kontakten oder Fotos, zeigt keine Werbung und gibt keine
+Spieldaten an Dritte weiter (zu Chromecast siehe oben). Das gilt auch für die Fire-TV-App.</p>
+
+<h2>Deine Rechte</h2>
+<p>Du hast das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung sowie auf
+Beschwerde bei einer Datenschutz-Aufsichtsbehörde. Meist reicht es, die Lobby nicht mehr zu benutzen: Nach
+24 Stunden ist sie weg.</p>
+
+<h2>Verantwortlich</h2>
+<p id="kontakt">Antonius Herold<br>Bredowstraße 21<br>10551 Berlin<br><a href="mailto:antoniusherold@gmail.com">antoniusherold@gmail.com</a></p>
+</main>
+</body>
+</html>
